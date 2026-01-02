@@ -94,8 +94,9 @@ main {
     font-family: Poppins;
     text-align: center;
     background-repeat: no-repeat;
-    min-height: 115vh;
     clip-path: url(#curved-bottom);
+    min-height: wrap-content;
+    padding-bottom: 120px;
 }
 .box {
     width: 400px;
@@ -278,4 +279,5 @@ footer div {
     margin-left: auto;
     justify-content: center;
     gap: 30px;
+
 }
