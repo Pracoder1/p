@@ -1,0 +1,147 @@
+body{
+    background-color: darkslateblue;
+    font-family: Poppins;
+    margin: 0;
+    color: white;
+}
+
+header {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    color: #ffffff;
+    align-items: center;
+    padding: 10px 75px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Poppins;
+}
+header img {
+    max-width: 150px;
+    height: auto;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    max-width: 60%;
+    gap: auto;
+}
+header li {
+    margin: 0 10px;
+    position: relative;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-bottom: 5px;
+    color: white;
+}
+header li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+header li a:hover::after,
+header li a:focus::after {
+  width: 80%;
+}
+.btnheader {
+    font-weight: bolder;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    color: #ffffff;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 41px;
+    text-decoration: none;
+}
+.btnheader:hover {
+    font-weight: bolder;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    color: darkslateblue;
+    background-color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 41px;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+main {
+    text-align: center;
+    align-items: center;
+    padding: 50px 100px 10px 100px;
+}
+main section {
+    justify-content: center;
+}
+main img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    border: 1px solid gold;
+    cursor: pointer;
+}
+main img:hover {
+    transform: translateX(4px) translateY(4px);
+    transition-duration: 0.5s;
+}
+main h2 {
+    color: gold;
+}
+.flex-box {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.contain {
+    display: block;
+    text-align: left;
+    width: 400px;
+    height: auto;
+}
+.contain div {
+    display: flex;
+    gap: 30px;
+    padding-top: 15px;
+}
+.contain a {
+    color: gold;
+    background: transparent;
+    border: 1px solid gold;
+    width: 120px;
+    height: auto;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.contain a:hover {
+    background-color: gold;
+    color: darkslateblue;
+    transform: translateX(-2px) translateY(-2px);
+    transition-duration: 0.5s;
+}
+
+footer {
+    text-align: center;
+    padding: 100px 100px 0px 100px;
+}

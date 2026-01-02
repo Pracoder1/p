@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+header {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    color: #ffffff;
+    align-items: center;
+    padding: 10px 75px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Poppins;
+}
+header img {
+    max-width: 150px;
+    height: auto;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    max-width: 60%;
+    gap: auto;
+}
+header li {
+    margin: 0 10px;
+    position: relative;
+}
+header li a {
+    text-decoration: none;
+    display: block; /* Ensures width/height work correctly */
+    position: relative;
+    padding-bottom: 5px;
+    color: white;
+}
+header li a::after {
+  content: ''; /* Required for ::after to appear (even if empty) */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of the line */
+  background-color: white; /* Match your text or use an accent color */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+header li a:hover::after,
+header li a:focus::after {
+  width: 80%; /* Expand to full width on hover/focus */
+}
+.btnheader {
+    font-weight: bolder;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    color: #ffffff;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 41px;
+    text-decoration: none;
+}
+.btnheader:hover {
+    font-weight: bolder;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    color: #0085e4;
+    background-color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 41px;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+
+main {
+    background: url("Frame\ 2.png");
+    background-color: #ffffff;
+    color: #ffffff;
+    background-size: cover;
+    background-position: bottom;
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Poppins;
+    text-align: center;
+    background-repeat: no-repeat;
+    min-height: 105vh;
+    clip-path: url(#curved-bottom);
+}
+main > section > div > h1 {
+  margin-top: 0;
+}
+main > section {
+    margin-top: 100px;
+}
+main > section > div > a {
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    color: #0085e4;
+    background-color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 41px;
+}
+main > section > div > a:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+#last-section {
+    padding: 40px 75px 100px 75px;
+    font-family: Poppins;
+    display: block;
+}
+#last-section h1 {
+    border-bottom: 3px solid #0085e4;
+    width: fit-content;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+#last-section img {
+    width: 150px;
+}
+#last-section section {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    background-color: #0074CA;
+    text-align: center;
+    padding: 15px 0;
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 14px;
+}
